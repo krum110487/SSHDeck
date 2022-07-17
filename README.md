@@ -13,4 +13,4 @@ Clicking on the new `ToggleSSH.desktop` will popup with information needed to lo
 ### TODO:
 I need to experiment with a .desktop file that uses curl to run the installer, but I don't want to reformat. I believe [SSHDeck_Install](https://raw.githubusercontent.com/krum110487/SSHDeck/main/SSHDeck_Install.desktop) should work as expected, but it is untested as of right now.
 
-Should probably require/prompt the user to input a password for "deck" when installing.
+Should probably require/prompt the user to input a password for "deck" when installing, could automatically update the script to include the password in it.
