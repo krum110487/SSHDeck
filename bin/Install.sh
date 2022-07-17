@@ -34,7 +34,10 @@ if grep -Fxq "Match user sdcard" /etc/ssh/sshd_config
 then
     echo 'sshd_config already contains text needed for chroot jail.'
 else
+    # Comment out the line "Subsystem	sftp	/usr/lib/ssh/sftp-server"
     sed -i 's/Subsystem	sftp	\/usr\/lib\/ssh\/sftp-server/#Subsystem	sftp	\/usr\/lib\/ssh\/sftp-server/g' /etc/ssh/sshd_config
+
+    # Add the information below so that the sdcard user is confined to /run/media, cannot navigate elsewhere.
     echo 'Subsystem	sftp	internal-sftp' >> /etc/ssh/sshd_config
     echo '' >> /etc/ssh/sshd_config
     echo '#Add this section to match for user "sdcard"' >> /etc/ssh/sshd_config
