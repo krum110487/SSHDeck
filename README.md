@@ -1,5 +1,5 @@
 # SSHDeck
-Installer for the Steam Deck that will create a "sdcard" user and temporarily enable SSH.
+Installer for the Steam Deck that will create a "sdcard" user and temporarily enable SSH until the popup is closed. This is useful for beginners to use a program like [WinSCP](https://winscp.net/eng/index.php) to login to their steam deck remotely to put files onto the SD card as needed.
 
 ### Installing:
 Simply download the `Install.sh` found [here](https://raw.githubusercontent.com/krum110487/SSHDeck/main/Install.sh) (right click and save link as) then run the command `sudo ./Install.sh`
