@@ -54,6 +54,8 @@ mkdir -p /home/deck/SSHToggle
 
 # Pull the ToggleSSH.sh
 curl --create-dirs -O --output-dir /home/deck/SSHToggle https://raw.githubusercontent.com/krum110487/SSHDeck/main/bin/ToggleSSH.sh
+chmod +x "/home/deck/SSHToggle/ToggleSSH.sh"
 
 # Pull the Desktop icon
 curl --create-dirs -O --output-dir /home/deck/Desktop https://raw.githubusercontent.com/krum110487/SSHDeck/main/bin/ToggleSSH.desktop
+chmod +x "/home/deck/Desktop/ToggleSSH.desktop"
