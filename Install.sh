@@ -18,6 +18,7 @@ if grep -q -E "^sdcard:" /etc/group; then
     echo "sdcard group already exists."
 else
     groupadd sdcard
+    chgrp -R sdcard /run/media
 fi
 
 # Create the user, if it does not exist.
