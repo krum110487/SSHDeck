@@ -1,0 +1,8 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=Toggle SSH
+Exec=/home/deck/SSHToggle/ToggleSSH.sh
+Icon=preferences-system-network	
+Terminal=false
+Type=Application
+StartupNotify=false
