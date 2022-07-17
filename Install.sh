@@ -24,7 +24,7 @@ fi
 if id "sdcard" &>/dev/null; then
     echo 'User "sdcard" already exists.'
 else
-    useradd --home-dir /run/media/ --shell /bin/rbash -g sdcard sdcard
+    useradd --home-dir /run/media/ --shell /bin/bash -g sdcard sdcard
     passwd -d sdcard
 fi
 
