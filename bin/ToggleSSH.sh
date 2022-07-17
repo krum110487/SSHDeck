@@ -36,7 +36,7 @@ while ! pgrep -f "sshd" > /dev/null; do
 done
 
 # Show the popup and on close, disable ssh and re-enable sleep
-if zenity --info --text "`printf "SSH server has started and Sleep mode is disabled, it will stay that way until you close this window.\nHost Name:\nPort Number: 22\nUser Name: sdcard or deck"`" --no-wrap --ok-label "Stop SSH"
+if zenity --info --text "`printf "SSH server has started and Sleep mode is disabled, it will stay that way until you close this window.\nHost Name: $ip4\nPort Number: 22\nUser Name: sdcard or deck"`" --no-wrap --ok-label "Stop SSH"
 then
     if $HASPASSWORD; then
         printf "$PASSWORD\n" | sudo -S systemctl unmask sleep.target suspend.target hibernate.target hybrid-sleep.target
